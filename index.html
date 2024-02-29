@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/main.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="creator_container">
+        <div class="order_checker">
+            <h2 class="order_chekecker_header">
+                Область просмотра заказа
+            </h2>
+            <div id="elements_list">
+                <div id="baseName" >
+                    <h4>Основа</h4>
+                </div>
+                <div id="firstEl" >
+                    <h4>Основной ингридиент</h4>
+                </div>
+                <div id="secondEl" >
+                    <h4>Дополнительный ингридиент</h4>
+                </div>
+                <div id="saucesEl" >
+                    <h4>Соус</h4>
+                </div>
+            </div>
+            <p class="price">
+                Стоимость <span id="res_price"></span> $
+            </p>
+        </div>
+        <div class="order_status">
+            <img src="./src/img/base.png" alt="" id="base" class="status_img">
+            <img src="./src/img/sauce.png" alt="" id="el1" class="status_img">
+            <img src="./src/img/el1.png" alt="" id="el2" class="status_img">
+            <img src="./src/img/el2.png" alt="" id="sauce" class="status_img">
+            <button type="button" class="enter_order" id="openModalButton">Заказать</button>
+        </div>
+        <div class="items">
+            <div class="item_list">
+                <h4>Основа</h4>
+                <ul>
+                    <li class="base">Классическая</li>
+                    <li class="base">Толстая корочка</li>
+                    <li class="base">Сырная корочка</li>
+                    <li class="base">Сладкая корочка</li>
+                </ul>
+            </div>
+            <div class="item_list">
+                <h4>Основной ингридиент</h4>
+                <ul>
+                    <li class="el1">Пеперони</li>
+                    <li class="el1">Курица</li>
+                    <li class="el1">Ветчина</li>
+                    <li class="el1">Морепродукты</li>
+                </ul>
+            </div>
+            <div class="item_list">
+                <h4>Дополнительный ингридиент</h4>
+                <ul>
+                    <li class="el2">Оливки</li>
+                    <li class="el2">Шампиньоны</li>
+                    <li class="el2">Сладкий перец</li>
+                    <li class="el2">Ананасы</li>
+                </ul>
+            </div>
+            <div class="item_list">
+                <h4>Соус</h4>
+                <ul>
+                    <li class="sauce">Сырный</li>
+                    <li class="sauce">Томатный</li>
+                    <li class="sauce">Песто</li>
+                    <li class="sauce">Барбекю</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <p>Ваш заказ принят!</p>
+            <p id="close">Закрыть</p>
+        </div>
+    </div>
+    <script src="script/script.js" type="module"></script>
+    <script src="script/constants.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI"
+}
+li {
+    list-style-type: none;
+    user-select: none;
+    cursor: auto;
+}
+h4{
+    user-select: none;
+    cursor: auto;
+}
+ul {
+    margin-left: 0;
+    padding-left: 0;
+    user-select: none;
+    cursor: auto;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../src/img/main_bg.png");
+    background-size: 256px 256px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.creator_container{
+    padding: 3vh;
+    width: 70vw;
+    height: 80vh;
+    background-color: #b494dadc;
+    border-radius: 5vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.items{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 20%;
+}
+.item_list{
+    margin: 2vw;
+}
+
+.order_checker
+{
+    padding: 3vh;
+    background-color: #e2b6fe;
+    width: 50%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.order_status
+{
+    padding: 3vh;
+    width: 50%;
+    height: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.status_img
+{
+    width: 40%;
+}
+#base
+{
+    z-index: -1000;
+}
+#el1
+{
+    z-index: -1000;
+}
+#el2
+{
+    z-index: -1000;
+}
+#sauce
+{
+    z-index: -1000;
+}
+.price
+{
+    font-weight:bold;
+}
+.enter_order
+{
+    width: 100%;
+    border: 1px solid #d9c2ed;
+    border-radius: 5vh;
+    padding: 2vh;
+    font-family:Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 3vh;
+    background-color: #efd8f4;
+}
+.enter_order:hover{
+    color: #d1b1d8;
+    background-color: #fff;
+    transition: .5s ease;
+}
+
+.elements_list
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.selected_base
+{
+    user-select: none;
+    cursor: auto;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.modal-content {
+    padding: 5vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transform: translate(-50%, -50%);
+    background-color: #defcfc;
+    border-radius: 5vh;
+    user-select: none;
+    cursor: auto;
+}
+#close {
+    color: #000;
+    margin: 2vh;
+    position: absolute;
+    top: 7vh;
+    right: 7vh;
+    cursor: pointer;
+    border-radius: 2vh;
+}
+
+#close:hover
+{
+    color: #fff;
+}
